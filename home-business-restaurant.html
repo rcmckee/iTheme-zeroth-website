@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>iTheme | Home Business Restaurant</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="iTheme - Multipurpose HTML5 Theme" />
+  <meta name="keywords" content="multipurpose, ios, material, blog, shop, portfolio, specialty pages, landing, elements, shortcodes, html5, css3, jquery, js, modernizr, gallery, slider, touch, mobile" />
+  <meta name="author" content="8Guild" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Alternative Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300italic,400italic,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css'>
+
+  <!-- Vendor Styles -->
+  <link href="revolution-slider/css/revolution-slider.css" rel="stylesheet" media="screen">
+  <link href="masterslider/style/masterslider.css" rel="stylesheet" media="screen">
+  <link href="css/vendor/ms-laptop-style.css" rel="stylesheet" media="screen">
+  <link href="css/vendor/magnific-popup.css" rel="stylesheet" media="screen">
+
+  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.less-->
+  <link href="css/styles.css" rel="stylesheet" media="screen">
+
+  <!-- Preloader (Pace.js) -->
+  <script src="js/plugins/pace.min.js"></script>
+
+  <!--Google Maps API-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+
+  <!--Modernizr / Detectizr-->
+  <script src="js/libs/modernizr.custom.js"></script>
+  <script src="js/libs/detectizr.min.js"></script>
+
+</head>
+
+<!-- Body -->
+<!-- Add ".body-alt" class to <body> for alternative color option. -->
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader-bg"></div>
+  <div class="preloader">
+    <span></span>
+  </div>
+    
+  <!-- Fake scrollbar (when open popups/modals) -->
+  <div class="fake-scrollbar"></div>
+
+  <!-- Login / Sign Up Modal -->
+  <div class="modal fade" id="login-modal">
+    <div class="modal-dialog">
+      <div class="container">
+        <div class="modal-form">
+          <div class="tab-content">
+            <!-- Sign in form -->
+            <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+              <h3 class="modal-title space-bottom-2x">Sign In</h3>
+              <div class="form-input">
+                <input type="email" name="si_email" id="si_email" readonly onfocus="$(this).removeAttr('readonly');" required>
+                <label for="si_email">Email</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-input">
+                <a class="helper-link" href="#">Forgot password?</a>
+                <input type="password" name="si_password" id="si_password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                <label for="si_password">Password</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox"> Remember me
+              </label>
+              <div class="space-top-2x clearfix">
+                <button type="button" class="btn btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                <button type="submit" class="btn btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+              </div>
+              <!-- Switching forms (Fake nav tab) -->
+              <div class="form-switch helper-text space-top-2x">Don`t have an account? <a href="#form-1">Sign up for iTheme</a></div>
+            </form>
+            <!-- Sign up form -->
+            <form class="tab-pane transition scale fade" id="signup-form">
+              <h3 class="modal-title space-bottom-2x">Sign Up</h3>
+              <div class="form-input">
+                <input type="email" name="su_email" id="su_email" required>
+                <label for="su_email">Email</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-input">
+                <input type="password" name="su_password" id="su_password"  required>
+                <label for="su_password">Password</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-input">
+                <input type="password" name="su_password_repeat" id="su_password_repeat" required>
+                <label for="su_password_repeat">Repeat password</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <label class="checkbox">
+                <input type="checkbox"> Subscribe for our news
+              </label>
+              <div class="space-top-2x clearfix">
+                <button type="button" class="btn btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                <button type="submit" class="btn btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+              </div>
+              <!-- Switching forms (Fake nav tab) -->
+              <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
+            </form>
+          </div>
+          <!-- Hidden real nav tabs -->
+          <ul class="nav-tabs hidden">
+            <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+            <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="search-modal">
+    <div class="modal-dialog">
+      <div class="container">
+        <!-- Search form -->
+        <form class="modal-form" id="search-form">
+          <h3 class="modal-title space-bottom-2x">Search</h3>
+          <div class="form-input">
+            <input type="text" name="search_inpt" id="search_inpt" required>
+            <label for="search_inpt">Type to search</label>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <div class="space-top-2x clearfix">
+            <button type="button" class="btn btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+            <button type="submit" class="btn btn-round btn-ghost btn-success pull-right"><i class="pe-7s-search"></i></button>
+          </div>
+        </form>
+      </div>
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+  <!-- Navbar Wrap -->
+  <!-- Used for defining Fullwidth Slider Offset from top in slider options -->
+  <section class="navbar-wrap">
+
+    <!-- Top Bar -->
+    <!-- The screen width at which topbar disappears can be controlled through the variable "@topbar-hidden" in less/variables.less -->
+    <div class="top-bar top-bar-dark">
+      <div class="container">
+        <div class="social-buttons">
+          <a href="#" class="sb-twitter cbutton cbutton--effect"><i class="bi-twitter"></i></a>
+          <a href="#" class="sb-google-plus cbutton cbutton--effect"><i class="bi-gplus"></i></a>
+          <a href="#" class="sb-facebook cbutton cbutton--effect"><i class="bi-facebook"></i></a>
+          <a href="#" class="sb-skype"><i class="bi-skype"></i>8guild</a>
+          <!-- <a href="#" class="sb-behance"><i class="bi-behance"></i></a> -->
+          <!-- <a href="#" class="sb-bitbucket"><i class="bi-bitbucket"></i></a> -->
+          <!-- <a href="#" class="sb-codepen"><i class="bi-codepen"></i></a> -->
+          <!-- <a href="#" class="sb-deviantart"><i class="bi-deviantart"></i></a> -->
+          <!-- <a href="#" class="sb-digg"><i class="bi-digg"></i></a> -->
+          <!-- <a href="#" class="sb-dribbble"><i class="bi-dribbble"></i></a> -->
+          <!-- <a href="#" class="sb-dropbox"><i class="bi-dropbox"></i></a> -->
+          <!-- <a href="#" class="sb-flickr"><i class="bi-flickr"></i></a> -->
+          <!-- <a href="#" class="sb-foursquare"><i class="bi-foursquare"></i></a> -->
+          <!-- <a href="#" class="sb-github"><i class="bi-github"></i></a> -->
+          <!-- <a href="#" class="sb-instagram"><i class="bi-instagram"></i></a> -->
+          <!-- <a href="#" class="sb-jsfiddle"><i class="bi-jsfiddle"></i></a> -->
+          <!-- <a href="#" class="sb-lastfm"><i class="bi-lastfm"></i></a> -->
+          <!-- <a href="#" class="sb-linkedin"><i class="bi-linkedin"></i></a> -->
+          <!-- <a href="#" class="sb-paypal"><i class="bi-paypal"></i></a> -->
+          <!-- <a href="#" class="sb-pinterest"><i class="bi-pinterest-circled"></i></a> -->
+          <!-- <a href="#" class="sb-reddit"><i class="bi-reddit"></i></a> -->
+          <!-- <a href="#" class="sb-soundcloud"><i class="bi-soundcloud"></i></a> -->
+          <!-- <a href="#" class="sb-stackoverflow"><i class="bi-stackoverflow"></i></a> -->
+          <!-- <a href="#" class="sb-steam"><i class="bi-steam"></i></a> -->
+          <!-- <a href="#" class="sb-stumbleupon"><i class="bi-stumbleupon"></i></a> -->
+          <!-- <a href="#" class="sb-trello"><i class="bi-trello"></i></a> -->
+          <!-- <a href="#" class="sb-tumblr"><i class="bi-tumblr"></i></a> -->
+          <!-- <a href="#" class="sb-twitch"><i class="bi-twitch"></i></a> -->
+          <!-- <a href="#" class="sb-vimeo"><i class="bi-vimeo-squared"></i></a> -->
+          <!-- <a href="#" class="sb-vine"><i class="bi-vine"></i></a> -->
+          <!-- <a href="#" class="sb-vk"><i class="bi-vkontakte"></i></a> -->
+          <!-- <a href="#" class="sb-wechat"><i class="bi-wechat"></i></a> -->
+          <!-- <a href="#" class="sb-wordpress"><i class="bi-wordpress"></i></a> -->
+          <!-- <a href="#" class="sb-xing"><i class="bi-xing"></i></a> -->
+          <!-- <a href="#" class="sb-yahoo"><i class="bi-yahoo"></i></a> -->
+          <!-- <a href="#" class="sb-yelp"><i class="bi-yelp"></i></a> -->
+          <!-- <a href="#" class="sb-youtube"><i class="bi-youtube"></i></a> -->
+        </div>
+
+        <!-- Switchers -->
+        <ul class="switchers">
+        <!-- Language Switcher -->
+          <li><a href="#">Usd</a>
+            <ul class="dropdown">
+              <li><a href="#">Usd</a></li>
+              <li><a href="#">Eur</a></li>
+              <li><a href="#">Chf</a></li>
+            </ul>
+          </li>
+          <!-- Language Switcher -->
+          <li><a href="#">En</a>
+            <ul class="dropdown">
+              <li><a href="#">De</a></li>
+              <li><a href="#">Fr</a></li>
+              <li><a href="#">Ru</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier classes like: "navbar-dark", "navbar-ghost navbar-ghost-light", .navbar-ghost navbar-ghost-dark" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "@nav-collapse" in less/variables.less -->
+    <header class="navbar navbar-dark navbar-sticky">
+      <div class="container">
+        <!-- Logo icon width can be adjusted trough the variable '@logo-img-max-width' in less/variables.less. The logo width (icon + text) can be adjusted trough the variable '@logo-max-width' in less/variables.less. -->
+        <a href="index.html" class="logo">
+          <img src="img/logo/logo-007aff.png" alt="iTheme">
+          <span>iTheme</span>
+        </a>
+
+        <!-- Site Navigation -->
+        <nav class="navbar-nav" id="site-menu">
+
+          <!-- Mobile Tools (Visible only when navbar collapsed) -->
+          <div class="mobile-navbar-tools">
+            <div class="switchers">
+              <div class="column">
+                <a href="#" class="active">Usd</a>
+                <a href="#">Eur</a>
+                <a href="#">Chf</a>
+              </div>
+              <div class="column">
+                <a href="#" class="active">En</a>
+                <a href="#">De</a>
+                <a href="#">Fr</a>
+              </div>
+            </div>
+            <div class="tools">
+              <div class="column">
+                <a href="#" data-toggle="modal" data-target="#login-modal" data-modal-form="sign-up">Sign Up</a>
+                <a href="#" data-toggle="modal" data-target="#login-modal" data-modal-form="sign-in" class="text-success">Login</a>
+              </div>
+              <div class="column">
+                <a href="#" class="sb-twitter cbutton cbutton--effect"><i class="bi-twitter"></i></a>
+                <a href="#" class="sb-google-plus cbutton cbutton--effect"><i class="bi-gplus"></i></a>
+                <a href="#" class="sb-facebook cbutton cbutton--effect"><i class="bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <ul>
+            <li class="has-submenu active"><a href="#">Home</a>
+              <ul class="submenu">
+                <li><a href="index.html">Introduction Page</a></li>
+                <li class="has-sub-submenu">
+                  <a href="#">Corporate Homepage</a>
+                  <ul class="sub-submenu">
+                    <li><a href="home-corporate-static-bg.html">Static Image Background</a></li>
+                    <li><a href="home-corporate-fullscreen-video.html">Video Fullscreen Background</a></li>
+                    <li><a href="home-corporate-fullwidth-slider.html">Full Width Slider (Revolution Slider)</a></li>
+                    <li><a href="home-corporate-fullscreen-slider.html">Fullscreen Slider (Revolution Slider)</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu active">
+                  <a href="#">Business Areas</a>
+                  <ul class="sub-submenu">
+                    
+                    <li class="active"><a href="home-business-restaurant.html">Culinary / Restaurant</a></li>
+                    <li><a href="home-business-it.html">IT / Software Development</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Portfolio Homepage</a>
+                  <ul class="sub-submenu">
+                    <li><a href="home-portfolio-web-agency.html">Web Agency</a></li>
+                    <li><a href="home-portfolio-photographer.html">Photographer</a></li>
+                    <li><a href="home-portfolio-freelancer.html">Freelancer</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Shop Homepage</a>
+                  <ul class="sub-submenu">
+                    <li><a href="home-shop-fullscreen-slider.html">Fullscreen Slider (Revolution Slider)</a></li>
+                    <li><a href="home-shop-fullwidth-slider.html">Full Width Slider (Revolution Slider)</a></li>
+                    <li><a href="home-shop-featured-slider.html">Featured Products Slider (Master Slider)</a></li>
+                    <li><a href="home-shop-categories-grid.html">Categories Grid</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="#">Portfolio</a>
+              <ul class="submenu">
+                <li><a href="portfolio-list.html">Portfolio List Layout</a></li>
+                <li><a href="portfolio-categorized.html">Portfolio Categorized</a></li>
+                <li class="has-sub-submenu">
+                  <a href="#">Portfolio Grid</a>
+                  <ul class="sub-submenu">
+                    <li><a href="portfolio-grid-1col.html">Portfolio Grid 1 Column</a></li>
+                    <li><a href="portfolio-grid-2col.html">Portfolio Grid 2 Columns</a></li>
+                    <li><a href="portfolio-grid-3col.html">Portfolio Grid 3 Columns</a></li>
+                    <li><a href="portfolio-grid-4col.html">Portfolio Grid 4 Columns</a></li>
+                  </ul>
+                </li>
+                <li><a href="portfolio-grid-masonry.html">Portfolio Masonry Grid</a></li>
+                <li class="has-sub-submenu">
+                  <a href="#">Portfolio Single Project</a>
+                  <ul class="sub-submenu">
+                    <li><a href="portfolio-single-v1.html">Portfolio Single Project v.1</a></li>
+                    <li><a href="portfolio-single-v2.html">Portfolio Single Project v.2</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Portfolio Grid No Gap Boxed</a>
+                  <ul class="sub-submenu">
+                    <li><a href="portfolio-nogap-boxed-mixed.html">Portfolio Mixed Columns</a></li>
+                    <li><a href="portfolio-nogap-boxed-1col.html">Portfolio 1 Column</a></li>
+                    <li><a href="portfolio-nogap-boxed-2col.html">Portfolio 2 Columns</a></li>
+                    <li><a href="portfolio-nogap-boxed-3col.html">Portfolio 3 Columns</a></li>
+                    <li><a href="portfolio-nogap-boxed-4col.html">Portfolio 4 Columns</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Portfolio Grid No Gap Full Width</a>
+                  <ul class="sub-submenu">
+                    <li><a href="portfolio-nogap-fw-mixed.html">Portfolio Mixed Columns</a></li>
+                    <li><a href="portfolio-nogap-fw-1col.html">Portfolio 1 Column</a></li>
+                    <li><a href="portfolio-nogap-fw-2col.html">Portfolio 2 Columns</a></li>
+                    <li><a href="portfolio-nogap-fw-3col.html">Portfolio 3 Columns</a></li>
+                    <li><a href="portfolio-nogap-fw-4col.html">Portfolio 4 Columns</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="#">Blog</a>
+              <ul class="submenu">
+                <li class="has-sub-submenu">
+                  <a href="#">Blog Grid Full Width</a>
+                  <ul class="sub-submenu">
+                    <li><a href="blog-grid-fullwidth-2col.html">Blog Grid 2 Columns</a></li>
+                    <li><a href="blog-grid-fullwidth-3col.html">Blog Grid 3 Columns</a></li>
+                    <li><a href="blog-grid-fullwidth-4col.html">Blog Grid 4 Columns</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Blog Grid with Sidebar</a>
+                  <ul class="sub-submenu">
+                    <li><a href="blog-grid-sidebar-2col.html">Blog Grid 2 Columns</a></li>
+                    <li><a href="blog-grid-sidebar-3col.html">Blog Grid 3 Columns</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog-grid-masonry.html">Blog Grid Masonry</a></li>
+                <li class="has-sub-submenu">
+                  <a href="#">Blog List</a>
+                  <ul class="sub-submenu">
+                    <li><a href="blog-list-fullwidth.html">Blog List Full Width</a></li>
+                    <li><a href="blog-list-sidebar.html">Blog List with Sidebar</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog-single.html">Blog Single Post</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="#">Shop</a>
+              <ul class="submenu">
+                <li class="has-sub-submenu">
+                  <a href="#">Shop Grid Full Width</a>
+                  <ul class="sub-submenu">
+                    <li><a href="shop-grid-fullwidth-2col.html">Shop Grid 2 Columns</a></li>
+                    <li><a href="shop-grid-fullwidth-3col.html">Shop Grid 3 Columns</a></li>
+                    <li><a href="shop-grid-fullwidth-4col.html">Shop Grid 4 Columns</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Shop Grid with Sidebar</a>
+                  <ul class="sub-submenu">
+                    <li><a href="shop-grid-sidebar-2col.html">Shop Grid 2 Columns</a></li>
+                    <li><a href="shop-grid-sidebar-3col.html">Shop Grid 3 Columns</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Shop List</a>
+                  <ul class="sub-submenu">
+                    <li><a href="shop-list-fullwidth.html">Shop List Full Width</a></li>
+                    <li><a href="shop-list-sidebar.html">Shop List with Sidebar</a></li>
+                  </ul>
+                </li>
+                <li class="has-sub-submenu">
+                  <a href="#">Single Product</a>
+                  <ul class="sub-submenu">
+                    <li><a href="shop-single-v1.html">Single Product v.1</a></li>
+                    <li><a href="shop-single-v2.html">Single Product v.2</a></li>
+                  </ul>
+                </li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="#">Pages</a>
+              <ul class="submenu">
+                <li><a href="parallax-cta.html">Parallax CTA</a></li>
+                <li><a href="faq-support.html">FAQ / Support</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="login.html">Log In / Sign Up</a></li>
+                <li><a href="under-construction.html">Under Construction</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="search-results.html">Search Results</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+              </ul>
+            </li>
+            <li class="has-mega-menu"><a href="#">Elements</a>
+              <div class="mega-menu">
+                <!-- Possible layout options ".column-2", ".column-3", ".column-4" -->
+                <ul class="column-4">
+                  <li class="submenu-heading">A - B</li>
+                  <li><a href="elements/accordions.html">Accordions &amp; Panels</a></li>
+                  <li><a href="elements/alerts.html">Alerts</a></li>
+                  <li><a href="elements/animations.html">Animations</a></li>
+                  <li><a href="elements/block-titles.html">Block Titles</a></li>
+                  <li><a href="elements/buttons.html">Buttons</a></li>
+                  <li class="submenu-heading">C - D</li>
+                  <li><a href="elements/charts.html">Charts</a></li>
+                  <li><a href="elements/clients.html">Clients</a></li>
+                  <li><a href="elements/cta-and-banners.html">Call To Action &amp; Banners</a></li>
+                  <li><a href="elements/countdowns.html">Countdowns</a></li>
+                  <li><a href="elements/counters.html">Counters</a></li>
+                  <li><a href="elements/dividers.html">Dividers</a></li>
+                </ul>
+                <ul class="column-4">
+                  <li class="submenu-heading">F - G</li>
+                  <li><a href="elements/fonts.html">Fonts</a></li>
+                  <li><a href="elements/footers.html">Footers</a></li>
+                  <li><a href="elements/forms.html">Forms</a></li>
+                  <li><a href="elements/gradients-and-colors.html">Gradients &amp; Solid Colors</a></li>
+                  <li><a href="elements/grids.html">Grids</a></li>
+                  <li class="submenu-heading">H - I</li>
+                  <li><a href="elements/headers.html">Headers</a></li>
+                  <li><a href="elements/icons.html">Icons</a></li>
+                  <li><a href="elements/content-boxes.html">Icon Content Boxes</a></li>
+                  <li><a href="elements/info-notifications.html">Info Notifications</a></li>
+                  <li><a href="elements/images.html">Images &amp; Thumbnails</a></li>
+                  <li><a href="elements/comparison-slider.html">Image Comparison Slider</a></li>
+                </ul>
+                <ul class="column-4">
+                  <li class="submenu-heading">L - M</li>
+                  <li><a href="elements/labels-and-badges.html">Labels &amp; Badges</a></li>
+                  <li><a href="elements/list-groups.html">List Groups</a></li>
+                  <li><a href="elements/maps.html">Maps</a></li>
+                  <li><a href="elements/master-slider.html">Master Slider (Premium)</a></li>
+                  <li><a href="elements/morphing-devices.html">Morphing Devices</a></li>
+                  <li class="submenu-heading">P - R - S</li>
+                  <li><a href="elements/page-titles.html">Page Titles &amp; Breadcrumbs</a></li>
+                  <li><a href="elements/pricing-plans.html">Pricing Plans</a></li>
+                  <li><a href="elements/progress-bars.html">Progress Bars</a></li>
+                  <li><a href="elements/ratings.html">Rating System</a></li>
+                  <li><a href="elements/sliders-and-carousels.html">Sliders &amp; Carousels</a></li>
+                  <li><a href="elements/sliders-and-switches.html">Sliders &amp; Switches</a></li>
+                </ul>
+                <ul class="column-4">
+                  <li class="submenu-heading">T</li>
+                  <li><a href="elements/tabs.html">Tabs</a></li>
+                  <li><a href="elements/tables.html">Tables</a></li>
+                  <li><a href="elements/team.html">Team</a></li>
+                  <li><a href="elements/testimonials.html">Testimonials</a></li>
+                  <li><a href="elements/text-columns.html">Text Columns</a></li>
+                  <li><a href="elements/tiles.html">Tiles</a></li>
+                  <li><a href="elements/timelines.html">Timelines</a></li>
+                  <li><a href="elements/tooltips-and-popovers.html">Tooltips &amp; Popovers</a></li>
+                  <li><a href="elements/typography.html">Typography</a></li>
+                  <li class="submenu-heading">V - W</li>
+                  <li><a href="elements/videos.html">Videos</a></li>
+                  <li><a href="elements/widgets.html">Widgets</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav><!-- Site Navigation End -->
+
+        <!-- Toolbar -->
+        <nav class="navbar-tools">
+          <ul>
+
+            <!-- Sign Up -->
+            <li class="signup-btn"><a href="#" data-toggle="modal" data-target="#login-modal" data-modal-form="sign-up">Sign Up</a></li>
+
+            <!-- Login -->
+            <li class="login-btn"><a href="#" data-toggle="modal" data-target="#login-modal" data-modal-form="sign-in" class="text-success">Login</a></li>
+
+            <!-- Search -->
+            <li class="navbar-search cbutton cbutton--effect">
+              <a href="#" data-toggle="modal" data-target="#search-modal" class="pe-7s-search"></a>
+            </li>
+
+            <!-- Cart Button -->
+            <li class="cart-btn cbutton cbutton--effect">
+              <a href="shopping-cart.html">
+                <i class="pe-7s-cart">
+                  <span class="count">3</span>
+                </i>
+              </a>
+              <!-- Cart Dropdown -->
+              <div class="dropdown">
+                <div class="cart-dropdown">
+                  <div class="item">
+                    <a class="thumb" href="shop-single-v1.html"><img src="img/shop/cart/dropdown/th01.png" alt="Thumbnail"></a>
+                    <div class="title-description">
+                      <a href="shop-single-v1.html">Canon Mreal</a>
+                      <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="price-quantity">
+                      <span class="delete">&times;</span>
+                      <div class="price"><span>1 x </span>$865</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <a class="thumb" href="shop-single-v1.html"><img src="img/shop/cart/dropdown/th02.png" alt="Thumbnail"></a>
+                    <div class="title-description">
+                      <a href="shop-single-v1.html">Cotton Handbag</a>
+                      <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="price-quantity">
+                      <span class="delete">&times;</span>
+                      <div class="price"><span>1 x </span>$230</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <a class="thumb" href="shop-single-v1.html"><img src="img/shop/cart/dropdown/th03.png" alt="Thumbnail"></a>
+                    <div class="title-description">
+                      <a href="shop-single-v1.html">Nest Thermostat</a>
+                      <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="price-quantity">
+                      <span class="delete">&times;</span>
+                      <div class="price"><span>1 x </span>$540</div>
+                    </div>
+                  </div>
+                  <div class="total">
+                    Cart subtotal:
+                    <span>$1635</span>
+                  </div>
+                </div>
+                <div class="dropdown-footer">
+                  <div class="column">
+                    <a href="shopping-cart.html" class="btn btn-ghost btn-primary btn-block">View Cart</a>
+                  </div>
+                  <div class="column">
+                    <span class="text-muted">or</span>
+                  </div>
+                  <div class="column">
+                    <a href="checkout.html" class="btn btn-success btn-block">Checkout</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Navigation Toggle -->
+            <li class="nav-toggle cbutton cbutton--effect">
+              <a href="#" class="flaticon-list26" data-nav-target="#site-menu"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header><!-- Navbar End -->
+
+  </section><!-- Navbar Wrap -->
+
+
+  <!-- Full Width Slider -->
+  <section class="rev-slider-container">
+    <div class="rev-slider" id="fw-rest-slider">
+      <ul>
+
+        <!-- Slide -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="1200" data-saveperformance="off" data-title="8 Burgers Open">
+
+          <!-- Main Image -->
+          <img src="img/homepage/business/restaurant/slide1/main.jpg" alt="Main Image" data-bgposition="center center" data-kenburns="on" data-duration="14000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center right">
+
+          <!-- Layer 1 -->
+          <div class="tp-caption customin"
+            data-x="800"
+            data-y="280"
+            data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+            data-speed="600"
+            data-start="1400"
+            data-endspeed="400"
+            data-captionhidden="off"
+            style="z-index: 6;"><img src="img/homepage/business/restaurant/slide1/layer01.png" alt="Layer">
+          </div>
+
+          <!-- Layer 2 -->
+          <div class="tp-caption sfl tp-resizeme text-bold text-light"
+            data-x="380"
+            data-y="300"
+            data-speed="500"
+            data-start="2100"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 7; font-size: 125px;">
+            WE
+          </div>
+
+          <!-- Layer 3 -->
+          <div class="tp-caption sfl tp-resizeme text-bold text-light"
+            data-x="380"
+            data-y="450"
+            data-speed="500"
+            data-start="2500"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 7; font-size: 125px;">
+            ARE
+          </div>
+
+          <!-- Layer 4 -->
+          <div class="tp-caption sfl tp-resizeme text-bold text-light"
+            data-x="380"
+            data-y="600"
+            data-speed="500"
+            data-start="3000"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 7; font-size: 125px;">
+            OPENED
+          </div>
+
+          <!-- Layer 5 -->
+          <div class="tp-caption customin customout tp-resizeme text-bold"
+            data-x="665"
+            data-y="770"
+            data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+            data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+            data-speed="1000"
+            data-start="3500"
+            data-easing="Back.easeInOut"
+            data-endspeed="300"
+            style="color: #efd5ab; font-size: 60px;">
+            MAY 20
+          </div>
+        </li>
+
+        <!-- Slide -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="1200" data-title="Special Offer">
+
+          <!-- Main Image -->
+          <img src="img/homepage/business/restaurant/slide2/main.jpg" alt="Main Image" data-bgposition="center center" data-kenburns="on" data-duration="14000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center bottom">
+
+          <!-- Layer 1 -->
+          <div class="tp-caption customin"
+            data-x="30"
+            data-y="320"
+            data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+            data-speed="600"
+            data-start="1400"
+            data-endspeed="400"
+            data-captionhidden="off"
+            style="z-index: 6;"><img src="img/homepage/business/restaurant/slide2/layer01.png" alt="Layer">
+          </div>
+
+          <!-- Layer 2 -->
+          <div class="tp-caption sfl tp-resizeme text-bold text-light"
+            data-x="30"
+            data-y="580"
+            data-speed="500"
+            data-start="2100"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 7; font-size: 125px;">
+            SPECIAL
+          </div>
+
+          <!-- Layer 3 -->
+          <div class="tp-caption sfl tp-resizeme text-bold text-light"
+            data-x="30"
+            data-y="730"
+            data-speed="500"
+            data-start="2500"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
+            data-captionhidden="off"
+            style="z-index: 7; font-size: 125px;">
+            OFFER
+          </div>
+
+          <!-- Layer 4 -->
+          <div class="tp-caption sfb tp-resizeme text-bold"
+            data-x="1400"
+            data-y="30"
+            data-speed="800"
+            data-start="3000"
+            data-easing="Power4.easeOut"
+            data-endspeed="400"
+            data-endeasing="Power1.easeIn"
+            style="z-index: 3; font-size: 250px;">
+            $13
+          </div>
+        </li>
+
+        <!-- Slide -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="1200" data-title="Specialty Menu">
+
+          <!-- Main Image -->
+          <img src="img/homepage/business/restaurant/slide3/main.jpg" alt="Main Image" data-bgposition="center center" data-kenburns="on" data-duration="14000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center left">
+
+
+          <!-- Layer 1 -->
+          <div class="tp-caption customin"
+            data-x="20"
+            data-y="660"
+            data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+            data-speed="600"
+            data-start="1400"
+            data-endspeed="400"
+            data-captionhidden="off"
+            style="z-index: 6;"><img src="img/homepage/business/restaurant/slide3/layer01.png" alt="Layer">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section><!-- Full Width Slider End -->
+
+
+  <!-- Our Story -->
+  <section class="container space-top-3x space-bottom-2x">
+    <div class="row">
+      <div class="col-sm-6 space-bottom-2x text-center-mobile">
+        <h2 class="font-alt-6">Our Burger Story</h2>
+        <p class="font-alt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid aperiam quidem, saepe hic quae sit debitis iusto! Temporibus saepe facere repellat, tenetur quas. Labore dolorum impedit aperiam voluptatum eligendi.</p>
+        <p class="visible-lg">Dignissimos quod non quia accusamus. Quibusdam pariatur esse quam qui autem assumenda sint, explicabo, itaque, maxime nesciunt fugit placeat.</p>
+        <a href="#" class="btn btn-ghost btn-primary btn-sm">Read more</a>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-6 space-bottom text-center">
+            <a href="img/homepage/business/restaurant/about/01.jpg" class="popup-img img-link">
+              <img src="img/homepage/business/restaurant/about/th01.jpg" alt="Thumbnail">
+            </a>
+          </div>
+          <div class="col-sm-6 space-bottom text-center">
+            <a href="img/homepage/business/restaurant/about/02.jpg" class="popup-img img-link">
+              <img src="img/homepage/business/restaurant/about/th02.jpg" alt="Thumbnail">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- Our Story End -->
+
+  
+  <!-- Gallery -->
+  <section id="rest-gallery" class="space-bottom-3x">
+    <!-- masterslider -->
+    <div class="master-slider ms-skin-default" id="ms-rest-gal">
+      <div class="ms-slide">
+        <img src="masterslider/style/blank.gif" data-src="img/homepage/business/restaurant/gallery/01.jpg" alt="lorem ipsum dolor sit"/>  
+      </div>
+      <div class="ms-slide">
+        <img src="masterslider/style/blank.gif" data-src="img/homepage/business/restaurant/gallery/02.jpg" alt="lorem ipsum dolor sit"/>  
+      </div>
+      <div class="ms-slide">
+        <img src="masterslider/style/blank.gif" data-src="img/homepage/business/restaurant/gallery/03.jpg" alt="lorem ipsum dolor sit"/>  
+      </div>
+      <div class="ms-slide">
+        <img src="masterslider/style/blank.gif" data-src="img/homepage/business/restaurant/gallery/04.jpg" alt="lorem ipsum dolor sit"/>  
+      </div>
+      <div class="ms-slide">
+        <img src="masterslider/style/blank.gif" data-src="img/homepage/business/restaurant/gallery/05.jpg" alt="lorem ipsum dolor sit"/>  
+      </div>
+    </div>
+    <!-- end of masterslider -->
+
+  </section><!-- Gallery End -->
+
+  
+  <!-- Menu -->
+  <section class="container">
+    <h2 class="font-alt-6">Restaurant Menu</h2>
+    <p class="font-alt-2 text-gray space-bottom-2x">Most popular dishes including season menu</p>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/01.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Chicken Sandwich</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$12</strong></h3>
+      </div>
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/02.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Cheeseburger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$10</strong></h3>
+      </div>
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/03.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Hamburger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$9</strong></h3>
+      </div>
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/04.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Burger with Bacon</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$13</strong></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/05.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Beef Burger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$11</strong></h3>
+      </div>
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/06.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Cheeseburger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$10</strong></h3>
+      </div>
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/07.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Hamburger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$9</strong></h3>
+      </div>
+      <div class="col-md-3 col-sm-6 font-alt-2 text-center space-bottom-2x">
+        <img src="img/homepage/business/restaurant/menu/08.jpg" class="img-thumbnail img-circle space-bottom" alt="Thumbnail">
+        <h4>Double Burger</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <h3><strong>$15</strong></h3>
+      </div>
+    </div>
+  </section><!-- Menu End -->
+
+
+  <!-- Chef -->
+  <section class="section-fw bg-solid-white space-top padding-top-2x">
+    <div class="container">
+      <div class="col-md-5 text-center">
+        <img src="img/homepage/business/restaurant/chef.jpg" alt="Chef">
+      </div>
+      <div class="col-md-6 col-md-offset-1 padding-top">
+        <div class="space-top visible-sm visible-xs"></div>
+        <h2 class="font-alt-6">Notre Chef</h2>
+        <p class="font-alt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eligendi nulla a quibusdam consequatur maiores quam assumenda quae dolor. Neque quas eius veniam corrupti sit totam, magni similique, fugiat voluptas.</p>
+        <h3 class="font-alt-6">His skills</h3>
+        <!-- Class ".progress-animated" enables animation on scroll. When use this class make sure you set your style="width" attribute to 0% OR remove it entirely. -->
+        <div class="progress progress-alt progress-primary progress-animated">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            Knife Sharpening
+            <span class="progress-label">70%</span>
+          </div>
+        </div>
+        <div class="progress progress-alt progress-success progress-animated">
+          <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            Seasoning
+            <span class="progress-label">55%</span>
+          </div>
+        </div>
+        <div class="progress progress-alt progress-info progress-animated">
+          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            Cooking
+            <span class="progress-label">80%</span>
+          </div>
+        </div>
+        <div class="progress progress-alt progress-warning progress-animated">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            Mis en place
+            <span class="progress-label">60%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- Chef End -->
+
+
+  <!-- Table Booking -->
+  <section class="section-split">
+    <div class="column" style="background-image: url(img/homepage/business/restaurant/tr-bg.jpg);"></div>
+    <form method="post" class="column padding-top-2x padding-bottom-3x" id="tr-form">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 class="font-alt-6 space-bottom-2x">Book a table</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>Full name <span class="text-danger">*</span></strong></h6>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="tr_first_name" class="sr-only">First name</label>
+              <input type="text" name="tr_first_name" id="tr_first_name" class="form-control" placeholder="First name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="tr_last_name" class="sr-only">First name</label>
+              <input type="text" name="tr_last_name" id="tr_last_name" class="form-control" placeholder="Last name" required>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>E-mail <span class="text-danger">*</span></strong></h6>
+            <hr>
+          </div>
+          <div class="form-group">
+            <label for="tr_email" class="sr-only">E-mail</label>
+            <input type="email" name="tr_email" id="tr_email" class="form-control" placeholder="ex: myname@example.com" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>Phone <span class="text-danger">*</span></strong></h6>
+            <hr>
+          </div>
+          <div class="form-group">
+            <label for="tr_phone" class="sr-only">Phone</label>
+            <input type="text" name="tr_phone" id="tr_phone" class="form-control" placeholder="Your phone number" required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>Number of guests <span class="text-danger">*</span></strong></h6>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="tr_guests" class="sr-only">Number of guests</label>
+              <input type="text" name="tr_guests" id="tr_guests" class="form-control" required>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>Date <span class="text-danger">*</span></strong></h6>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-4">
+              <label for="tr_month" class="sr-only">Month</label>
+              <select class="form-select" id="tr_month">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-4">
+              <label for="tr_day" class="sr-only">Day</label>
+              <select class="form-select" id="tr_day">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-4">
+              <label for="tr_year" class="sr-only">Year</label>
+              <select class="form-select" id="tr_year">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>Time <span class="text-danger">*</span></strong></h6>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="tr_time" class="sr-only">Time</label>
+              <select class="form-select" id="tr_time">
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 AM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+                <option>10:00 PM</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="block-title space-bottom">
+            <h6><strong>Any Special Request?</strong></h6>
+            <hr>
+          </div>
+          <div class="form-group">
+            <label for="tr_message" class="sr-only">Message</label>
+            <textarea name="tr_message" id="tr_message" rows="4" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-right">
+          <button type="submit" class="btn btn-pill btn-warning2">Submit form</button>
+        </div>
+      </div>
+    </form>
+  </section><!-- Table Booking End -->
+
+
+  <!-- Map / Address -->
+  <section class="section-split">
+    <div class="column bg-solid-white padding-top-3x padding-bottom-3x">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 class="font-alt-6 space-bottom">Our adress</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-1 col-md-6 col-sm-4">
+          <address class="space-bottom">
+            <strong>8 Burgers Restaurant</strong><br>
+            105448 Cross Bay BLVD, Suite 600<br>
+            New York, NY 96200<br>
+            <abbr title="Phone">P:</abbr> (135) 646-7980
+            <div class="social-buttons">
+              <a href="#" class="cbutton cbutton--effect"><i class="bi-facebook"></i></a>
+              <a href="#" class="cbutton cbutton--effect"><i class="bi-twitter"></i></a>
+              <a href="#" class="cbutton cbutton--effect"><i class="bi-skype"></i></a>
+            </div>
+            <div class="divider"></div>
+          </address>
+          <address>
+            <strong>E-mail address</strong><br>
+            <a href="mailto:first.last@example.com">first.last@example.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+    <div class="column" style="padding: 0;">
+      <!-- Data API: 
+           data-height="500" height of the map in pixels
+           data-address="Your address" string
+           data-zoom="number" to control map zoom when loaded
+           data-disable-controls="false/true" enable/disable map controls like pan, zoom, etc.
+           data-scrollwheel="true/false" enable/disable mouse scroll wheel zoom
+           data-marker="path_to_your_image" path to custom marker image
+           data-marker-title=" Your title" appears on marker hover
+           data-styles="[array]" you can adjust the look and feel of your map. Recommend to use https://snazzymaps.com
+       -->
+      <div class="google-map"
+           data-height="450"
+           data-address="NY, USA"
+           data-zoom="6"
+           data-disable-controls="false"
+           data-scrollwheel="false"
+           data-marker="img/map-marker.png"
+           data-marker-title="8 Burgers Restaurant"
+      ></div>
+    </div>
+  </section><!-- Map / Address End -->
+
+
+  <!-- Reviews -->
+  <section class="container space-top-3x space-bottom-3x">
+    <h2 class="font-alt-6 space-bottom-2x">Guests Reviews</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="comments-list space-bottom-3x">
+          
+          <!-- Top level review -->
+          <div class="comment">
+            <div class="comment-inner">
+              <div class="author-ava">
+                <img src="img/avatars/ava01.jpg" alt="Avatar">
+              </div>
+              <div class="comment-content">
+                <h5>Awesome burgers. Eat them every day...</h5>
+                <div class="rating rating-warning">
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star"></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dicta ea, quidem ad cumque vel harum amet sit voluptas saepe.</p>
+                <div class="comment-meta">
+                  <a href="#">Terry Mitchell</a>
+                  <span>27/04/2015 at 9 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-inner">
+              <div class="author-ava">
+                <img src="img/avatars/ava02.jpg" alt="Avatar">
+              </div>
+              <div class="comment-content">
+                <h5>My husband love your restaurant.</h5>
+                <div class="rating rating-warning">
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                </div>
+                <p>Voluptas suscipit deleniti delectus temporibus alias earum fugit.</p>
+                <div class="comment-meta">
+                  <a href="#">Jessica Blanch</a>
+                  <span>13/04/2015 at 11 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="comments-list space-bottom-3x">
+          
+          <!-- Top level review -->
+          <div class="comment">
+            <div class="comment-inner">
+              <div class="author-ava">
+                <img src="img/avatars/ava04.jpg" alt="Avatar">
+              </div>
+              <div class="comment-content">
+                <h5>Great Restaurant for everyone...</h5>
+                <div class="rating rating-warning">
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dicta ea, quidem ad cumque vel harum amet sit voluptas saepe.</p>
+                <div class="comment-meta">
+                  <a href="#">Susanna Davis</a>
+                  <span>09/03/2015 at 7 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-inner">
+              <div class="author-ava">
+                <img src="img/avatars/ava03.jpg" alt="Avatar">
+              </div>
+              <div class="comment-content">
+                <h5>Friendly staff, warm atmosphere..</h5>
+                <div class="rating rating-warning">
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star active"></span>
+                  <span class="star"></span>
+                </div>
+                <p>Voluptas suscipit deleniti delectus temporibus alias earum fugit.</p>
+                <div class="comment-meta">
+                  <a href="#">John Doe</a>
+                  <span>30/02/2015 at 12 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Form -->
+    <h3 class="font-alt-6 text-center space-bottom-2x">Leave a Reviews</h3>
+    <div class="row space-bottom">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset1">
+        <form method="post" id="comment-form" novalidate="novalidate">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-input">
+                <input type="text" name="comf_name" id="comf_name" required="" aria-required="true">
+                <label for="comf_name">Name</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-input">
+                <input type="email" name="comf_email" id="comf_email" required="" aria-required="true">
+                <label for="comf_email">Email</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-input">
+            <textarea name="comf_comment" id="comf_comment" required="" aria-required="true"></textarea>
+            <label for="comf_comment">Review</label>
+            <span class="error-label"></span>
+            <span class="valid-label"></span>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+            <div class="rating-input rating-input-warning" style="margin: 10px 0;">
+              <input type="text" value="3" data-size="md" data-symbol="&#xe611;">
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-4 col-sm-12">
+                  <button type="submit" class="btn btn-ghost btn-block btn-sm btn-primary">Leave review</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section><!-- Reviews End -->
+
+
+  <!-- Scroll to Top Button -->
+  <!-- Use 'data-scroll-top' attribute to set value at which point the scroll to top button appears. -->
+  <a href="#" class="btn btn-icon btn-primary scroll-to-top-btn scroll-up" data-scroll-top="600">
+    <i class="pe-7s-angle-up"></i>
+  </a>
+
+
+  <!-- Subscription -->
+  <section class="section-fw bg-solid-default padding-top padding-bottom-2x">
+    <div class="container">
+      <div class="widget widget-inline">
+        <div class="column-outer">
+          <div class="inner">
+            <div class="column-inner text-left">
+              <i class="icon icon-2x text-gradient-custom5 pe-7s-note"></i>
+              <h2 class="inline va-middle text-light">Subscribe</h2>
+            </div>
+          </div>
+        </div>
+        <div class="column-outer">
+          <!-- MailChimp Subscription -->
+          <form action="//8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=916472e71b" method="post" id="subscr-widget-form2" class="inner" target="_blank" novalidate="novalidate" autocomplete="off">
+            <div class="column-inner">
+              <div class="form-input form-input-light">
+                <input type="email" name="EMAIL" id="sw_email" required="" aria-required="true">
+                <label for="sw_email">Email</label>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+            </div>
+            <div class="column-inner">
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_916472e71b" tabindex="-1" value=""></div>
+
+              <button type="submit" class="btn btn-ghost btn-light btn-sm btn-block">Subscribe</button>
+              <div class="text-center" style="margin-bottom: -20px;">
+                <span class="size-sm text-success">We do not spam</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section><!-- Subscription End -->
+
+  <!-- Devider -->
+  <section class="section-fw bg-solid-default">
+    <div class="container">
+      <hr class="semi-transparent space-bottom-none space-top-none">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-mini footer-dark bg-solid-default">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="social-buttons">
+            <a href="#" class="sb-twitter cbutton cbutton--effect"><i class="bi-twitter"></i></a>
+            <a href="#" class="sb-google-plus cbutton cbutton--effect"><i class="bi-gplus"></i></a>
+            <a href="#" class="sb-facebook cbutton cbutton--effect"><i class="bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-3 text-right">
+          <p class="copyright">&copy; 2015 <a href="http://8guild.com/" target="_blank">8 Guild</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer><!-- Footer End -->
+
+
+  <!-- JavaScript (jQuery) libraries and scripts -->
+  <script src="js/libs/jquery-1.11.2.min.js"></script>
+  <script src="js/libs/jquery.easing.min.js"></script>  
+  <script src="js/plugins/bootstrap.min.js"></script>
+  <script src="js/plugins/smoothscroll.js"></script>
+  <script src="js/plugins/velocity.min.js"></script>
+  <script src="js/plugins/form-plugins.js"></script>
+  <script src="js/plugins/waypoints.min.js"></script>
+  <script src="js/plugins/icon-click-effect.js"></script>
+  <script src="revolution-slider/js/rs-tools.min.js"></script>
+  <script src="revolution-slider/js/revolution-slider.min.js"></script>
+  <script src="masterslider/masterslider.min.js"></script>
+  <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+  <script src="js/plugins/gmap3.min.js"></script>
+  <script src="js/plugins/rating.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body><!-- Body End -->
+
+</html>
