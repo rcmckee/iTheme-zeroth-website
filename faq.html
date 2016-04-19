@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ZEROTH | Confidentiality</title>
+  <title>iTheme | FAQ / Support</title>
 
   <!--SEO Meta Tags-->
   <meta name="description" content="iTheme - Multipurpose HTML5 Theme" />
@@ -42,6 +42,7 @@
   <!-- Fake scrollbar (when open popups/modals) -->
   <div class="fake-scrollbar"></div>
 
+
   <!-- Navbar -->
   <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier classes like: "navbar-dark", "navbar-ghost navbar-ghost-light", .navbar-ghost navbar-ghost-dark" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "@nav-collapse" in less/variables.less -->
   <header class="navbar navbar-sticky">
@@ -66,32 +67,89 @@
           <li class="has-submenu"><a href="#">About</a>
             <ul class="submenu">
               <li><a href="about.html">About Us</a></li>
-              <li><a href="faq-support.html">FAQ</a></li>
-              <li><a href="privacy-policy.html">Confidentiality</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="confidentiality.html">Confidentiality</a></li>
+
             </ul>
           </li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+          <!--<li><a href="contacts.html">Contact</a></li>-->
+
         </ul>
       </nav><!-- Site Navigation End -->
     </div>
   </header><!-- Navbar End -->
   
   <!-- Page Title -->
-  <section class="page-title page-title-banner page-title-image-parallax text-light space-bottom-3x" style="background-image:url(img/page-titles/policy-bg.jpg);">
+  <section class="page-title page-title-banner page-title-image-parallax text-light space-bottom-3x" style="background-image:url(img/page-titles/faq-bg.jpg);">
     <div class="container">
-      <h1>Confidentiality</h1>
+      <h1>FAQ</h1>
+
     </div>
   </section><!-- Page Title End -->
 
   <!-- Container -->
   <section class="container space-bottom-3x">
+
+
+    <!-- FAQ Row -->
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <p>
-        <span class="dropcap text-gradient-custom3">C</span>
-        lient onfidentiality is our number 1 priority. We understant that even the names of our clients can be competitive business information to our clients competitors. We also understand that disclosure of certain information can impact patent rights.</p>
-        <p class="space-bottom-2x">The methods we use do not depend on knowledge of your trade secrets, or information that could impact your patent rights. We discourage our clients from telling us any information that could affect their patent rights or could be considered a trade secret.</p>
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="block-title">
+          <h3>Frequent Questions</h3>
+          <hr class="hr-bold hr-danger">
+        </div>
+        <div class="panel-group" id="fqSection">
+          <div class="panel">
+            <div class="panel-heading">
+              <a class="collapsed" data-toggle="collapse" data-parent="#fqSection" href="#collapse10">
+                What does "Zeroth" mean?
+              </a>
+            </div>
+            <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body">
+                zēˌrōTH (Zero + th) - immediately preceding what is otherwise regarded as first in a series.<br><br>Traditionally, getting a patent is regarded as the first step in profiting from innovation. We help you take that first step with confidence by making sure that you are spending your time and money on innovation that will sell.
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <a class="collapsed" data-toggle="collapse" data-parent="#fqSection" href="#collapse11">
+                How will ZEROTH help me before I get a patent?
+                <!-- <span class="label label-danger align-right">Frequent</span>-->
+              </a>
+            </div>
+            <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body">
+                Not all novel inventions will sell. Not all innovations need a patent. Since the priority date is from the date of filing, we want you to have priority on the most valuable features from the earliest date possible.
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <a class="collapsed" data-toggle="collapse" data-parent="#fqSection" href="#collapse12">
+                How will ZEROTH help me if I already have a patent?
+              </a>
+            </div>
+            <div id="collapse12" class="panel-collapse collapse">
+              <div class="panel-body">
+                We can help you determine if you should file more applications, if you should cut your losses, what is the best strategy for bringing the technology to market, and if there are any exit opportnities available.
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <a data-toggle="collapse" data-parent="#fqSection" href="#collapse13">
+                What about confidentiality?
+              </a>
+            </div>
+            <div id="collapse13" class="panel-collapse collapse in">
+              <div class="panel-body">
+                We take confidentiality seriously. We will never disclose client names, how the technology works, or any information you do not wish disclosed. To get you the maximum value from our service we just need to know what your innovation does, not how it does it. Please see our Confidentiality page for more information.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section><!-- Container End -->
@@ -102,8 +160,6 @@
   <a href="#" class="btn btn-icon btn-primary scroll-to-top-btn scroll-up" data-scroll-top="600">
     <i class="pe-7s-angle-up"></i>
   </a>
-
-
 
   <!-- Footer -->
   <!-- To switch to light version simply remove class ".footer-dark" -->
@@ -117,7 +173,6 @@
   </footer><!-- Footer End -->
 
 
-
   <!-- JavaScript (jQuery) libraries and scripts -->
   <script src="js/libs/jquery-1.11.2.min.js"></script>
   <script src="js/libs/jquery.easing.min.js"></script>  
@@ -128,6 +183,7 @@
   <script src="js/plugins/waypoints.min.js"></script>
   <script src="js/plugins/icon-click-effect.js"></script>
   <script src="js/scripts.js"></script>
+  <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'e959c465-0665-46a3-a418-763942c69a1c', f: true }); done = true; } }; })();</script>
 
 </body><!-- Body End -->
 
