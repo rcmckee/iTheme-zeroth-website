@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>iTheme | Home Corporate Fullscreen Slider</title>
+  <title>ZEROTH | Home Corporate Fullscreen Slider</title>
 
   <!--SEO Meta Tags-->
   <meta name="description" content="iTheme - Multipurpose HTML5 Theme" />
@@ -50,101 +50,6 @@
   <!-- Fake scrollbar (when open popups/modals) -->
   <div class="fake-scrollbar"></div>
 
-  <!-- Login / Sign Up Modal -->
-  <div class="modal fade" id="login-modal">
-    <div class="modal-dialog">
-      <div class="container">
-        <div class="modal-form">
-          <div class="tab-content">
-            <!-- Sign in form -->
-            <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
-              <h3 class="modal-title space-bottom-2x">Sign In</h3>
-              <div class="form-input">
-                <input type="email" name="si_email" id="si_email" readonly onfocus="$(this).removeAttr('readonly');" required>
-                <label for="si_email">Email</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-input">
-                <a class="helper-link" href="#">Forgot password?</a>
-                <input type="password" name="si_password" id="si_password" readonly onfocus="$(this).removeAttr('readonly');" required>
-                <label for="si_password">Password</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <label class="checkbox">
-                <input type="checkbox"> Remember me
-              </label>
-              <div class="space-top-2x clearfix">
-                <button type="button" class="btn btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
-                <button type="submit" class="btn btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
-              </div>
-              <!-- Switching forms (Fake nav tab) -->
-              <div class="form-switch helper-text space-top-2x">Don`t have an account? <a href="#form-1">Sign up for iTheme</a></div>
-            </form>
-            <!-- Sign up form -->
-            <form class="tab-pane transition scale fade" id="signup-form">
-              <h3 class="modal-title space-bottom-2x">Sign Up</h3>
-              <div class="form-input">
-                <input type="email" name="su_email" id="su_email" required>
-                <label for="su_email">Email</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-input">
-                <input type="password" name="su_password" id="su_password"  required>
-                <label for="su_password">Password</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <div class="form-input">
-                <input type="password" name="su_password_repeat" id="su_password_repeat" required>
-                <label for="su_password_repeat">Repeat password</label>
-                <span class="error-label"></span>
-                <span class="valid-label"></span>
-              </div>
-              <label class="checkbox">
-                <input type="checkbox"> Subscribe for our news
-              </label>
-              <div class="space-top-2x clearfix">
-                <button type="button" class="btn btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
-                <button type="submit" class="btn btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
-              </div>
-              <!-- Switching forms (Fake nav tab) -->
-              <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
-            </form>
-          </div>
-          <!-- Hidden real nav tabs -->
-          <ul class="nav-tabs hidden">
-            <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
-            <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
-  <!-- Search Modal -->
-  <div class="modal fade" id="search-modal">
-    <div class="modal-dialog">
-      <div class="container">
-        <!-- Search form -->
-        <form class="modal-form" id="search-form">
-          <h3 class="modal-title space-bottom-2x">Search</h3>
-          <div class="form-input">
-            <input type="text" name="search_inpt" id="search_inpt" required>
-            <label for="search_inpt">Type to search</label>
-            <span class="error-label"></span>
-            <span class="valid-label"></span>
-          </div>
-          <div class="space-top-2x clearfix">
-            <button type="button" class="btn btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
-            <button type="submit" class="btn btn-round btn-ghost btn-success pull-right"><i class="pe-7s-search"></i></button>
-          </div>
-        </form>
-      </div>
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 
   <!-- Ghost Header Wrapper -->
   <div class="ghost-header-wrapper">
