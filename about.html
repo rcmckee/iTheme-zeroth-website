@@ -43,7 +43,7 @@
 
 <!-- Body -->
 <!-- Add ".body-alt" class to <body> for alternative color option. -->
-<body>
+<body class="section-css-parallax" style="background-image: url(img/page-titles/policy-bg.jpg);">
 
   <!-- Preloader -->
   <div class="preloader-bg"></div>
@@ -54,53 +54,74 @@
   <!-- Fake scrollbar (when open popups/modals) -->
   <div class="fake-scrollbar"></div>
 
-  <!-- Navbar -->
-  <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier classes like: "navbar-dark", "navbar-ghost navbar-ghost-light", .navbar-ghost navbar-ghost-dark" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "@nav-collapse" in less/variables.less -->
-  <header class="navbar navbar-sticky">
-    <div class="container">
-      <!-- Logo icon width can be adjusted trough the variable '@logo-img-max-width' in less/variables.less. The logo width (icon + text) can be adjusted trough the variable '@logo-max-width' in less/variables.less. -->
-      <a href="index.html" class="logo">
-        <img src="img/logo/zerothlogozen.png" width="50" height="70" alt="">
-        <span>ZEROTH</span>
-      </a>
+  <!-- Ghost Header Wrapper -->
+  <div class="ghost-header-wrapper">
 
-      <!-- Site Navigation -->
-      <nav class="navbar-nav" id="site-menu">
-
-        <!-- Mobile Tools (Visible only when navbar collapsed) -->
-
-        <!-- Navigation -->
-        <ul>
-          <li class="active"><a href="index.html">Home</a>
-          </li>
-          <li><a href="https://medium.com/@zeroth">Blog</a>
-          </li>
-          <li class="has-submenu"><a href="#">About</a>
-            <ul class="submenu">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="confidentiality.html">Confidentiality</a></li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+    <!-- Top Bar -->
+    <!-- The screen width at which topbar disappears can be controlled through the variable "@topbar-hidden" in less/variables.less -->
 
 
-        </ul>
-      </nav><!-- Site Navigation End -->
-    </div>
-  </header><!-- Navbar End -->
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier classes like: "navbar-dark", "navbar-ghost navbar-ghost-light", .navbar-ghost navbar-ghost-dark" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "@nav-collapse" in less/variables.less -->
+    <header class="navbar navbar-ghost navbar-ghost-dark navbar-sticky">
+      <div class="container">
+        <!-- Logo icon width can be adjusted trough the variable '@logo-img-max-width' in less/variables.less. The logo width (icon + text) can be adjusted trough the variable '@logo-max-width' in less/variables.less. -->
+        <a href="index.html" class="logo">
+          <img src="img/logo/zerothlogozen.png" width="50" height="70" alt="">
+          <span>ZEROTH</span>
+        </a>
+
+        <!-- Site Navigation -->
+        <nav class="navbar-nav" id="site-menu">
+
+          <!-- Mobile Tools (Visible only when navbar collapsed) -->
+
+          <!-- Navigation -->
+          <ul>
+            <li class="active"><a href="index.html">Home</a>
+            </li>
+            <li><a href="https://medium.com/@zeroth">Blog</a>
+            </li>
+            <li class="has-submenu"><a href="#">About</a>
+              <ul class="submenu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="confidentiality.html">Confidentiality</a></li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+
+
+          </ul>
+        </nav><!-- Site Navigation End -->
+
+        <!-- Toolbar -->
+        <nav class="navbar-tools">
+          <ul>
+
+
+
+            <!-- Navigation Toggle -->
+            <li class="nav-toggle cbutton cbutton--effect">
+              <a href="#" class="flaticon-list26" data-nav-target="#site-menu"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header><!-- Navbar End -->
+
+  </div><!-- Ghost Header Wrapper -->
   
   <!-- Page Title -->
-  <section class="page-title page-title-banner page-title-image-parallax text-light space-bottom-3x" style="background-image:url(img/page-titles/about-bg.jpg);">
-    <div class="container">
+  <section class="text-light padding-top">
+    <div class="container text-center" style="padding: 100px 0px 0px 0px;">
       <h1>About Us</h1>
-
     </div>
   </section><!-- Page Title End -->
 
   <!-- Icon Content Boxes -->
-  <section class="container space-bottom-2x">
+  <section class="section-fw bg-solid-white padding-top-3x padding-bottom-3x">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h3 class="text-center">“Anything that won’t sell, I don’t want to invent. Its sale is proof of utility, and utility is success.” - Thomas Edison</h3>
@@ -138,11 +159,11 @@
   </section><!-- Icon Content End -->
 
   <!-- Personal Info -->
-  <section class="container space-bottom-3x">
-    <div class="row">
+  <section class="section-fw bg-solid-gray padding-top-3x padding-bottom-3x">
+    <div class="row" style="padding: 25px;">
       <div class="col-sm-7">
         <h3>Robert C McKee</h3>
-        <div class="row">
+        <div class="row" style="padding: 25px;">
           <div class="col-sm-4 col-xs-6">
             <img src="img/team/modified-SMALL-Square.jpg" class="img-thumbnail img-circle" alt="Robert C McKee">
           </div>

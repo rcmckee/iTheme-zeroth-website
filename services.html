@@ -43,7 +43,7 @@
 
 <!-- Body -->
 <!-- Add ".body-alt" class to <body> for alternative color option. -->
-<body>
+<body class="section-css-parallax" style="background-image: url(img/page-titles/policy-bg.jpg);">
 
   <!-- Preloader -->
   <div class="preloader-bg"></div>
@@ -54,94 +54,118 @@
   <!-- Fake scrollbar (when open popups/modals) -->
   <div class="fake-scrollbar"></div>
 
-  <!-- Navbar -->
-  <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier classes like: "navbar-dark", "navbar-ghost navbar-ghost-light", .navbar-ghost navbar-ghost-dark" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "@nav-collapse" in less/variables.less -->
-  <header class="navbar navbar-sticky">
-    <div class="container">
-      <!-- Logo icon width can be adjusted trough the variable '@logo-img-max-width' in less/variables.less. The logo width (icon + text) can be adjusted trough the variable '@logo-max-width' in less/variables.less. -->
-      <a href="index.html" class="logo">
-        <img src="img/logo/zerothlogozen.png" width="50" height="70" alt="">
-        <span>ZEROTH</span>
-      </a>
+  <!-- Ghost Header Wrapper -->
+  <div class="ghost-header-wrapper">
 
-      <!-- Site Navigation -->
-      <nav class="navbar-nav" id="site-menu">
-
-        <!-- Mobile Tools (Visible only when navbar collapsed) -->
-
-        <!-- Navigation -->
-        <ul>
-          <li class="active"><a href="index.html">Home</a>
-          </li>
-          <li><a href="https://medium.com/@zeroth">Blog</a>
-          </li>
-          <li class="has-submenu"><a href="#">About</a>
-            <ul class="submenu">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="confidentiality.html">Confidentiality</a></li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+    <!-- Top Bar -->
+    <!-- The screen width at which topbar disappears can be controlled through the variable "@topbar-hidden" in less/variables.less -->
 
 
-        </ul>
-      </nav><!-- Site Navigation End -->
-    </div>
-  </header><!-- Navbar End -->
+    <!-- Navbar -->
+    <!-- Add class ".navbar-sticky" to make navbar stuck when it hits the top of the page. You can also use modifier classes like: "navbar-dark", "navbar-ghost navbar-ghost-light", .navbar-ghost navbar-ghost-dark" to change navbar apperance. The screen width at which navbar collapses can be controlled through the variable "@nav-collapse" in less/variables.less -->
+    <header class="navbar navbar-ghost navbar-ghost-dark navbar-sticky">
+      <div class="container">
+        <!-- Logo icon width can be adjusted trough the variable '@logo-img-max-width' in less/variables.less. The logo width (icon + text) can be adjusted trough the variable '@logo-max-width' in less/variables.less. -->
+        <a href="index.html" class="logo">
+          <img src="img/logo/zerothlogozen.png" width="50" height="70" alt="">
+          <span>ZEROTH</span>
+        </a>
+
+        <!-- Site Navigation -->
+        <nav class="navbar-nav" id="site-menu">
+
+          <!-- Mobile Tools (Visible only when navbar collapsed) -->
+
+          <!-- Navigation -->
+          <ul>
+            <li class="active"><a href="index.html">Home</a>
+            </li>
+            <li><a href="https://medium.com/@zeroth">Blog</a>
+            </li>
+            <li class="has-submenu"><a href="#">About</a>
+              <ul class="submenu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="confidentiality.html">Confidentiality</a></li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+
+
+          </ul>
+        </nav><!-- Site Navigation End -->
+
+        <!-- Toolbar -->
+        <nav class="navbar-tools">
+          <ul>
+
+
+
+            <!-- Navigation Toggle -->
+            <li class="nav-toggle cbutton cbutton--effect">
+              <a href="#" class="flaticon-list26" data-nav-target="#site-menu"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header><!-- Navbar End -->
+
+  </div><!-- Ghost Header Wrapper -->
   
   <!-- Page Title -->
-  <section class="page-title page-title-banner page-title-image-parallax text-light space-bottom-3x" style="background-image:url(img/page-titles/services-bg.jpg);">
-    <div class="container">
+  <section class="text-light padding-top">
+    <div class="container text-center" style="padding: 100px 0px 0px 0px;">
       <h1>Services</h1>
-
     </div>
   </section><!-- Page Title End -->
 
   <!-- Icon Content Boxes -->
-  <section class="container space-bottom-2x">
-    <div class="row">
+  <section class="section-fw bg-solid-white padding-top-3x padding-bottom-3x">
+    <div class="row" style="padding: 25px;">
       <h2 class="text-center">We get answers to your most important questions</h2><br><br>
       <div class="col-md-4 col-sm-6">
         <div class="content-box">
           <span class="badge badge-circle badge-primary">Step 1</span>
-          <i class="icon icon-primary pe-7s-network"></i>
+          <i class="icon icon-circle icon-info flaticon-cents1"></i>
           <h3 class="content-box-title">Will It Sell?</h3>
           <p>Thomas Edison found this out the hard way. It doesn't matter how great a new technology is if no one will buy it. Developing new technology will cost you a lot of time and money. Wouldn't you want to know beforehand if your investment will pay off or if you should move on to something else?</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="content-box">
-          <span class="badge badge-circle badge-info">Step 2</span>
-          <i class="icon icon-info pe-7s-paint"></i>
+          <span class="badge badge-circle badge-primary">Step 2</span>
+          <i class="icon icon-circle icon-info flaticon-bulb11"></i>
           <h3 class="content-box-title">Should You Get A Patent?</h3>
           <p>Not all novel inventions will sell. Not all innovations need a patent. Knowing what to patent and what to keep secret can be a big competitive advantage against your competitors.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="content-box">
-          <span class="badge badge-circle badge-success">Step 3</span>
-          <i class="icon icon-success pe-7s-browser"></i>
+          <span class="badge badge-circle badge-primary">Step 3</span>
+          <i class="icon icon-circle icon-info pe-7s-config"></i>
           <h3 class="content-box-title">What Should The Patent Focus On?</h3>
           <p>Since the priority date is from the date of filing, we want you to have priority on the most valuable features from the earliest date possible. It is critical for your patent attorneys to know what are the most valuable features of your technology so that they can focus on protecting them when negotiating with the patent office about the claims.</p>
         </div>
       </div>
     </div>
-    <div class="row">
+  </section><!-- services Content End -->
+
+  <section class="section-fw bg-solid-gray padding-top-3x padding-bottom-3x">
+    <div class="row" style="padding: 25px;">
       <h2 class="text-center">Results</h2><br><br>
       <div class="col-md-4 col-sm-6">
         <div class="content-box">
-          <span class="badge badge-circle badge-primary">Result</span>
-          <i class="icon icon-primary pe-7s-network"></i>
+          <span class="badge badge-circle badge-success">Result</span>
+          <i class="icon icon-circle icon-info flaticon-cents1"></i>
           <h3 class="content-box-title">Patent Portfolio Enhancement</h3>
           <p>Are you spending a huge portion of your budget filing patents to protect your innovation but you are still not sure if the valuable features are protected? It's not just you. Many patents are filed before the inventors have any idea about what the market wants. The results are patents that are overly broad, vague, and use complex language so that the lawyers can later argue in court that the patent covers whatever is valuable.<br><br> We get you the important information, such as if it will sell, so that you can file patents that focus on features that are valuable to the market. This results in a cost effective patent strategy that creates a strong patent portfolio.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="content-box">
-          <span class="badge badge-circle badge-info">Result</span>
-          <i class="icon icon-info pe-7s-paint"></i>
+          <span class="badge badge-circle badge-success">Result</span>
+          <i class="icon icon-circle icon-info flaticon-briefcase9"></i>
           <h3 class="content-box-title">Technology Development Assessment</h3>
           <p>Is your burn rate sustainable if you launch your technology and no one buys it? Are you thinking about putting your time and life savings into developing an innovation but are not sure if it will be a flop or a phenominal success?</p><br>
           <p>An outside perspective with experience analyzing new technology and new startups can give you the assurance that you are making the right decision. Whether the decision is to start a new technology, continue with development, or deciding on what features are required for a minimum viable product, we can help you with go, no go assessments, and how to proceed forward.</p>
@@ -150,15 +174,90 @@
       <div class="col-md-4 col-sm-6">
         <div class="content-box">
           <span class="badge badge-circle badge-success">Result</span>
-          <i class="icon icon-success pe-7s-browser"></i>
+          <i class="icon icon-circle icon-info flaticon-caution2"></i>
           <h3 class="content-box-title">Investment Opportunity Assessment</h3>
           <p>Do you have the opportunity to invest in an early stage company or a new technology but you don't know what questions to ask? Are you willing to risk your money on your gut feeling or on theoretical financial projections?</p><br>
           <p>Investing in early stage technology is very different from investing in traditional financial vehicles. There is no  history to analyze and it could be years before the product reaches the market. As an investor you need to know what the market thinks, what exit opportunities are available, and what steps to take to get to those exits.</p>
         </div>
       </div>
-    </div>
+    </div> <!-- Results Content End -->
   </section><!-- Icon Content End -->
 
+    <!-- Container 4 column grid of clients-->
+  <section class="container space-top space-bottom">
+    <div class="row">
+      <!-- Portfolio Grid 4 Colums -->
+      <!-- Portfolio Isotope No Gap Grid Mixed Columns -->
+      <div class="grid isotope-grid isotope-nogap filter-grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        
+        <!-- Item -->
+        <div class="col-md-3 col-sm-6">
+
+            <div class="tile">
+              <div class="tile-thumb">
+                <a href="inventors.html" class="overlay">
+                </a>
+                <img src="img/portfolio/thumbs/th01.jpg" width="400" height="400" alt="Thumbnail">
+              </div>
+              <div class="tile-body">
+                <a href="inventors.html" class="tile-title"><h3>Inventors</h3></a>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Item -->
+        <div class="col-md-3 col-sm-6">
+
+            <div class="tile">
+              <div class="tile-thumb">
+                <a href="startups.html" class="overlay">
+                </a>
+                <img src="img/portfolio/thumbs/th02.jpg" width="400" height="400" alt="Thumbnail">
+              </div>
+              <div class="tile-body">
+                <a href="startups.html" class="tile-title"><h3>Startups</h3></a>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Item -->
+        <div class="col-md-3 col-sm-6">
+
+            <div class="tile">
+              <div class="tile-thumb">
+                <a href="corporations.html" class="overlay">
+                </a>
+                <img src="img/portfolio/thumbs/th03.jpg" height="400" alt="Thumbnail">
+              </div>
+              <div class="tile-body">
+                <a href="corporations.html" class="tile-title"><h3>Corporations</h3></a>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- Item -->
+        <div class="col-md-3 col-sm-6">
+
+            <div class="tile">
+              <div class="tile-thumb">
+                <a href="investors.html" class="overlay">
+                </a>
+                <img src="img/portfolio/thumbs/th04.jpg" width="400" height="400" alt="Thumbnail">
+              </div>
+              <div class="tile-body">
+                <a href="investors.html" class="tile-title"><h3>Investors</h3></a>
+              </div>
+            </div>
+
+        </div>
+      </div><!-- Portfolio Grid End -->
+    </div>
+  </section><!-- Container End -->
 
   <!-- Scroll to Top Button -->
   <!-- Use 'data-scroll-top' attribute to set value at which point the scroll to top button appears. -->
